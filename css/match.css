@@ -1,0 +1,237 @@
+/* CSS reset and styling */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text-primary: #1c2a38;
+    --color-text-secondary: #8A8F98;
+    --color-bg-primary: #fff;
+    --color-bg-secondary: #f3f5f9;
+    --color-theme-primary: #623ce6;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-secondary);
+}
+
+.match {
+    background-color: var(--color-bg-primary);
+    display: flex;
+    flex-direction: column;
+    width: 90%; /* Adjusted width */
+    max-width: 700px; /* Reduced max width */
+    margin: 20px auto; /* Centered with reduced margin */
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1), 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Reduced padding */
+}
+
+
+.match-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px; 
+}
+
+.result{
+    margin-left: 10px;
+}
+
+
+.match-status {
+    background-color: #1c2a38;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.match-tournament {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.match-content {
+    display: flex;
+    position: relative;
+}
+
+.column {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-logo {
+    width: 50px;
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--color-bg-primary);
+    box-shadow: 0 4px 4px 0 rgba(#303030, 0.15),
+                0 0 0 15px var(--color-bg-secondary);
+    img {
+        width: 50px;
+    }
+}
+
+.team-name {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.match-score {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.match-score-number {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    color: #1c2a38;
+}
+
+.match-score-divider {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-text-secondary);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #343a40, #495057);
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.sidebar {
+    background-color: #212529;
+    color: #ffffff;
+    min-height: 100vh;
+    width: 280px;
+    padding: 20px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.sidebar a {
+    color: #adb5bd;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #495057;
+    color: white;
+}
+.sidebar a.active {
+    background-color: #495057;
+    font-weight: bold;
+}
+.main-content {
+    margin-left: 300px;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.match-result {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+.match-result h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.match-result .score {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.match-result .btn-back {
+    background-color: #343a40;
+    color: white;
+}
+.match-result .btn-back:hover {
+    background-color: #495057;
+}
+.match-footer {
+    margin-top: auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.match-footer .btn {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--color-theme-primary);
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.match-footer .btn:hover {
+    background-color: #1c2a38;
+}

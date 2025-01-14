@@ -1,0 +1,102 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.navbar {
+    background: linear-gradient(90deg, #343a40, #495057);.navbar {
+        background: linear-gradient(90deg, #343a40, #495057);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        }
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.sidebar {
+    background-color: #212529;
+    color: #ffffff;
+    min-height: 100vh;
+    width: 280px;
+    padding: 20px 10px;
+    position: fixed;
+}
+.sidebar a {
+    color: #adb5bd;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #495057;
+    color: white;
+}
+.sidebar a.active {
+    background-color: #495057;
+    font-weight: bold;
+}
+.main-content {
+    margin-left: 300px; /* Adjust according to your sidebar width */
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-text-primary);
+    margin-bottom: 10px;
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

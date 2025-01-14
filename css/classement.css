@@ -1,0 +1,123 @@
+/* Reset and styling */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text-primary: #1c2a38;
+    --color-text-secondary: #8A8F98;
+    --color-bg-primary: #fff;
+    --color-bg-secondary: #f3f5f9;
+    --color-theme-primary: #623ce6;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.navbar {
+    background: linear-gradient(90deg, #343a40, #495057);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    }
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.sidebar {
+    background-color: #212529;
+    color: #ffffff;
+    min-height: 100vh;
+    width: 280px;
+    padding: 20px 10px;
+    position: fixed;
+}
+.sidebar a {
+    color: #adb5bd;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sidebar a:hover {
+    background-color: #495057;
+    color: white;
+}
+.sidebar a.active {
+    background-color: #495057;
+    font-weight: bold;
+}
+
+.main-content {
+    margin-left: 300px;
+    margin-top: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: var(--color-text-primary);
+    margin-bottom: 20px;
+}
+
+.table {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+td div {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-striped tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+.table th {
+    background-color: #f3f5f9;
+    font-weight: bold;
+}
+
+.table td {
+    font-size: 15px;
+    color: var(--color-text-primary);
+}

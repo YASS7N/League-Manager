@@ -1,0 +1,50 @@
+body {
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 120%;
+}
+.form-container h1 {
+    color: rgb(62, 65, 69);
+}
+.btn-dark {
+    background: rgb(62, 65, 69);
+    border: none;
+    transition: background 0.3s ease;
+}
+.btn-primary:hover {
+    background: rgb(23, 24, 24);
+}
+.form-label {
+    color: #555;
+    font-weight: bold;
+}
+
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background-color: #343a40;
+    color: white;
+    overflow-y: auto;
+}
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #495057;
+}
