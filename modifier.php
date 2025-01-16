@@ -122,6 +122,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- Sidebar -->
         <div class="sidebar">
             <h3 class="text-center mb-4">Menu</h3>
+            <h3 class="text-center mb-4">Menu</h3>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a href="index.php" class="nav-link">

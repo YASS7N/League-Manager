@@ -95,6 +95,7 @@ $result = $conn->query($query);
         <!-- Sidebar -->
         <div class="sidebar">
             <h3 class="text-center mb-4">Menu</h3>
+            <h3 class="text-center mb-4">Menu</h3>
             <ul class="nav flex-column">
                 <li class="nav-item"><a href="index.php" class="nav-link"><i class="fas fa-home"></i> Accueil</a></li>
                 <li class="nav-item"><a href="ajouter.php" class="nav-link"><i class="fas fa-plus-circle"></i> Ajouter une équipe</a></li>

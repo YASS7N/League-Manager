@@ -82,6 +82,7 @@ $result = $conn->query($query);
         <!-- Sidebar -->
         <div class="sidebar">
             <h3 class="text-center mb-4">Menu</h3>
+            <h3 class="text-center mb-4">Menu</h3>
             <ul class="nav flex-column">
                 <li class="nav-item">
                     <a href="index.php" class="nav-link">
@@ -117,7 +118,7 @@ $result = $conn->query($query);
         </div>
 
     <!-- Main Content -->
-    <div class="container mt-5">
+    <div class="container mt-5"><br>
         <h1 class="text-center mb-4">Historique des Matches</h1>
         <table class="table table-bordered table-striped text-center">
             <thead>
